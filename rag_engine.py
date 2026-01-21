@@ -31,7 +31,7 @@ def create_vector_store(chunks):
 
 
 def build_qa_chain(vectorstore):
-    llm = Ollama(model="llama3")   # ← THIS is the key line
+    llm = Ollama(model="llama3")   
     retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
 
     qa_chain = RetrievalQA.from_chain_type(
