@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Streamlit cache
+.streamlit/
+
+# Uploaded resumes
+resumes/
+
+# Vector DB (if saved)
+faiss_index/
+
+# OS files
+.DS_Store
+Thumbs.db
